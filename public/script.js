@@ -12,7 +12,7 @@ const showHeros = async () => {
        
         let img = document.createElement("img");
         section.append(img);
-        img.src = "http://localhost:3000/" + hero.img;
+        img.src = "https://node-project-1nrm.onrender.com/" + hero.img;
 
         let h3 = document.createElement("h3");
         section.append(h3);
@@ -39,7 +39,7 @@ const showHeros = async () => {
 
 const getJSON = async () => {
     try {
-        let response = await fetch("http://localhost:3000/api/project");
+        let response = await fetch("https://node-project-1nrm.onrender.com/api/project");
         return await response.json();
     } catch(error) {
         console.log("error retrieving json");
